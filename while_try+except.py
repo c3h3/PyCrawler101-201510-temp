@@ -9,6 +9,8 @@ while True:
         url = "http://pi.isuphoto.org/post/{}"
         res = resquests.get(url.format(counter))
         # and more code if you need...
+        # then move to next resource
+        counter += 1
     # when no resources, a exception happens, print then handle it
     except Exception, e:
         print str(e)
